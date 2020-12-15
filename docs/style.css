@@ -1,0 +1,373 @@
+/**, *::before, *::after {
+    box-sizing: border-box;
+}*/
+
+body {
+    margin: 0;
+    padding-bottom: 2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+   /* color: #003B4A;*/
+   color:black
+}
+
+h4 {
+    font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+ h1, h2, h3, h6, p {
+    
+    font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+    font-weight: 400; 
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    margin: 10;
+    color: #888;
+}
+
+h3 {
+    font-size: 2rem;
+    /*font-size: 52px;*/
+    margin-top:20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+h5 {
+
+  /*  font-size: 2.5rem;*/
+
+    font-size: 1.5rem;
+   /* margin-top:-20px;*/
+    margin-bottom: 20px;
+}
+
+
+
+
+h6 {
+    font-size: 30px;
+    margin-top:-40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+.subtitle {
+    text-align: center;
+} 
+
+h4 {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    padding-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+/*     font-size: 10px; */
+/*     font-size: 22px; */
+    color: black;
+}
+
+a {
+    color: #F69333;
+}
+
+a:hover,
+a:focus {
+    color: rgb(96, 112, 116);
+}
+
+.sidebar a {
+    color: rgb(96, 112, 116);
+}
+
+.sidebar a:hover {
+    color: #F69333
+}
+
+::-webkit-scrollbar;
+
+#scrollPath {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 10px;
+    height:100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+#progressbar {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 10px;
+    height:100%;
+    background:  linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+
+}
+.writeText {
+    padding: 400px;
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.writeText .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.writeText .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+@keyframes animate {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+header {
+    width: 100%;
+    background: #000033;
+    text-align: center;
+    /*padding: 4em 0;*/
+    padding: 6em 0;
+}
+
+.intro {
+    width: 100%;
+}
+
+.summary {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: .8;
+    /*font-size: .95rem;*/
+    /*padding: 1em 0;*/
+    padding: 3em 0;
+}
+
+.preamble {
+    margin: 0 auto;
+    background: #efefef;
+    padding: 3em 2em;
+    margin-bottom: 4em;
+
+    /*columns: 20em;*/
+}
+
+/* Style for overview */
+.overview{
+    background-color: #f1f1f1;
+    /*padding: 65px;*/
+      text-align: justify;
+   text-justify: inter-word;
+    padding: 5px;
+    height:1200px;
+    text-align: center;
+    width:100%;
+    color: black;
+}
+
+
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  /*padding-top: 0.2em;*/
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+
+
+.preamble h3 {
+    text-align: center;
+    /*column-span: all;*/
+}
+
+.preamble p {
+    margin-top: 0;
+}
+
+.main {
+    padding: 2rem;
+    /*margin-top: 0px;*/
+    padding-top:0rem;
+}
+
+.sidebar {
+    background: #92DFF1;
+    padding: 2em;
+}
+
+.copyright-text {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 14px;
+        font-size:12px;
+        /*font: 2px 200 "Segoe UI Light", 
+        Helvetica, Arial, sans-serif;*/
+        /*font: 2px 400 "Segoe UI Light", 
+        Helvetica, Arial, sans-serif;*/
+} 
+
+
+/*Deals with desktop version styling*/
+@media (min-width: 900px) {
+
+   /* .page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    */
+
+    h1, h3, h4 h6 {
+        font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        line-height: 1;
+    }
+
+    h1, h2, h3, h6, p {
+    
+        font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+        font-weight: 500; 
+    }
+    h3 {
+        text-align:center;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: left;
+        margin-left:60px;
+        /*color: white;*/
+        /*margin: 0;*/
+    }
+
+     h2 {
+        /*font-size: 4rem;*/
+        text-align: left;
+        margin-left:60px;
+        /*color: white;*/
+        /*margin: 0;*/
+    }
+
+    h3 {
+        font-size: 52px;
+        margin-top:20px;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    h4 {
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        padding-bottom: 0px;
+    }
+
+    /*h5 {
+        font-size: 22px;
+        text-align: center;
+        color: black;
+    }*/
+
+    h5 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    /*h6 {*/
+        /*text-align:center;*/
+       /* margin-left:auto;
+        margin-right:auto;
+        width: 100%;*/
+ /*   }*/
+
+
+
+    h6 {
+        font-size: 48px;
+        margin-top:-40px;
+        margin-bottom: 10px;
+        color: black;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+    }
+    
+    p {
+    font-size: 22px;
+    color: black;
+}
+
+    /*.main {
+        width: 50%;
+        margin-left: auto;
+    }*/
+    
+    .sidebar {
+        width: 30%;
+        margin-right: auto;
+    }
+
+    .copyright-text {
+        width:100%;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font: 20px 400 "Segoe UI Light", Helvetica, Arial, sans-serif;
+    } 
+
+     .subtitle {
+        margin-left:30px;
+        text-align:left;     
+    } 
+}

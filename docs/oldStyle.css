@@ -1,0 +1,461 @@
+/**, *::before, *::after {
+    box-sizing: border-box;
+}*/
+
+body {
+    margin: 0;
+    padding-bottom: 2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+   /* color: #003B4A;*/
+   color:black
+}
+
+h4 {
+    font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+ h1, h2, h3, h6, p {
+    
+    font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+    font-weight: 400; 
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    margin: 10;
+    color: #888;
+}
+
+h3 {
+    font-size: 2.5rem;
+    /*font-size: 52px;*/
+    margin-top:20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+h5 {
+
+    font-size: 2.5rem;
+   /* margin-top:-20px;*/
+    margin-bottom: 20px;
+}
+
+h6 {
+    font-size: 48px;
+    margin-top:-40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+.subtitle {
+    text-align: center;
+} 
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    padding-bottom: 0px;
+}
+
+p {
+    font-size: 22px;
+    color: black;
+}
+
+a {
+    color: #F69333;
+}
+
+a:hover,
+a:focus {
+    color: rgb(96, 112, 116);
+}
+
+.sidebar a {
+    color: rgb(96, 112, 116);
+}
+
+.sidebar a:hover {
+    color: #F69333
+}
+
+::-webkit-scrollbar;
+
+#scrollPath {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 10px;
+    height:100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+#progressbar {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 10px;
+    height:100%;
+    background:  linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+
+}
+.writeText {
+    padding: 400px;
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.writeText .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.writeText .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+@keyframes animate {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+header {
+    width: 100%;
+    background: #000033;
+    text-align: center;
+    /*padding: 4em 0;*/
+    padding: 6em 0;
+}
+
+.intro {
+    width: 100%;
+}
+
+.summary {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: .8;
+    /*font-size: .95rem;*/
+    /*padding: 1em 0;*/
+    padding: 3em 0;
+}
+
+.preamble {
+    margin: 0 auto;
+    background: #efefef;
+    padding: 3em 2em;
+    margin-bottom: 4em;
+
+    /*columns: 20em;*/
+}
+
+.preamble h3 {
+    text-align: center;
+    /*column-span: all;*/
+}
+
+.preamble p {
+    margin-top: 0;
+}
+
+.main {
+    padding: 2rem;
+    /*margin-top: 0px;*/
+    padding-top:0rem;
+}
+
+.sidebar {
+    background: #92DFF1;
+    padding: 2em;
+}
+
+.copyright-text {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        font: 20px 400 "Segoe UI Light", 
+        Helvetica, Arial, sans-serif;
+} 
+
+
+/*Deals with desktop version styling*/
+@media (min-width: 900px) {
+
+   /* .page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    */
+
+    h1, h3, h4 h6 {
+        font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        line-height: 1;
+    }
+
+    h1, h2, h3, h6, p {
+    
+        font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+        font-weight: 500; 
+    }
+    h3 {
+        text-align:center;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: left;
+        margin-left:60px;
+        /*color: white;*/
+        /*margin: 0;*/
+    }
+
+     h2 {
+        /*font-size: 4rem;*/
+        text-align: left;
+        margin-left:60px;
+        /*color: white;*/
+        /*margin: 0;*/
+    }
+
+    h3 {
+        font-size: 52px;
+        margin-top:20px;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    h4 {
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        padding-bottom: 0px;
+    }
+
+    h6 {
+        /*text-align:center;*/
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+    }
+
+    /*.main {
+        width: 50%;
+        margin-left: auto;
+    }*/
+    
+/*     .sidebar {
+        width: 30%;
+        margin-right: auto;
+    } */
+
+    .copyright-text {
+        width:100%;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        font: 20px 400 "Segoe UI Light", Helvetica, Arial, sans-serif;
+    } 
+
+     .subtitle {
+        margin-left:30px;
+        text-align:left;     
+    } 
+	
+	
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; 
+  width: 0; /* changed with JS*/
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* Change colour of sidebar on scroll */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  /*background-color: #000033;*/
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 35px;
+  background-color: #000033;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #000033;
+}
+	
+	    
+    #scrollPath {
+	position: fixed;
+	top:0;
+	right: 0;
+	width: 10px;
+	height:100%;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+
+#progressbar {
+	position: fixed;
+	top:0;
+	right: 0;
+	width: 10px;
+	height:100%;
+	background:  linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 5s linear infinite;
+
+}
+
+/* @keyframes animate {
+	0%, 100% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+} */
+
+#progressbar:before {
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: linear-gradient(to top,#008aff, #00ffe7);
+	filter: blur(10px);
+}
+
+#progressbar:after{
+	content: '';
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: linear-gradient(to top,#008aff, #00ffe7);
+	filter: blur(30px);
+}
+
+    
+    
+    button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 1.5rem;
+    color:var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    text-align: center;
+}
+
+button.big-button {
+	top:200px;
+	padding: 1em 2em;
+	border: 2px solid var(--colorShadeA);
+	border-radius: 1em;
+	background: var(--colorShadeE);
+	transform-style: preserve-3d;
+	transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+button.big-button::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--colorShadeC);
+	border-radius: inherit;
+	box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+	transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+button.big-button:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.375em);
+}
+
+button.big-button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+button.big-button:active {
+            transform: translate(0em, 0.75em);
+}
+
+button.big-button:active::before {
+  transform: translate3d(0, 0, -1em);
+  
+      box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+
+}
+
+}
