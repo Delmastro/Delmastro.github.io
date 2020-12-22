@@ -426,7 +426,9 @@ header {
 
 .button{
     margin-top:36px;
-    margin-left:175px;
+   /* margin-left:175px;*/
+   /*margin-left:50px;*/
+   margin-left:200px;
     /*text-align: center;*/
 }
 
@@ -471,7 +473,8 @@ header {
   /*left: 0;*/
   /*right: 0;*/
   /*right: -25px;*/
-  right: -40px;
+  /*right: -40px;*/
+  right:-120px;
   /*right:auto;*/
  /* left:auto;*/
  /* background-color: #000033;*/
@@ -503,8 +506,13 @@ header {
   position: absolute;
   top: 0;
   /*right: 25px;*/
-  right: 35px;
-  right:0px
+  /*right: 35px;*/
+/*  right: -60px;*/
+/*  right: 100px;*/
+/*  right: 160px;*/
+  right: 150px;
+  /*right: 10px;*/
+ /* right:0px*/
   font-size: 36px;
   margin-left: 50px;
   /*background-color: #000033;*/
@@ -521,6 +529,9 @@ header {
   /*padding: 10px 15px;*/
   padding: 10px 30px;
   border: none;
+ /* margin-left: 100px;*/
+ margin-top:-30px;
+ margin-left: 140px;
   /* position: fixed;*/
 }
 
