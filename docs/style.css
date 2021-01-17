@@ -1,15 +1,10 @@
-/**, *::before, *::after {
-    box-sizing: border-box;
-}*/
-
 body {
     margin: 0;
     padding-bottom: 2em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
-   /* color: #003B4A;*/
-   color:black
+    color:black
 }
 
 h4 {
@@ -37,23 +32,15 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    /*font-size: 52px;*/
     margin-top:20px;
     margin-bottom: 10px;
     color: black;
 }
 
 h5 {
-
-  /*  font-size: 2.5rem;*/
-
     font-size: 1.5rem;
-   /* margin-top:-20px;*/
     margin-bottom: 20px;
 }
-
-
-
 
 h6 {
     font-size: 30px;
@@ -77,13 +64,7 @@ h4 {
 p {
     font-size: 14px;
     text-align: center;
-/*     font-size: 10px; */
-/*     font-size: 22px; */
     color: black;
-}
-
-a {
-    color: #F69333;
 }
 
 a:hover,
@@ -91,36 +72,6 @@ a:focus {
     color: rgb(96, 112, 116);
 }
 
-.sidebar a {
-    color: rgb(96, 112, 116);
-}
-
-.sidebar a:hover {
-    color: #F69333
-}
-
-::-webkit-scrollbar;
-
-#scrollPath {
-    position: fixed;
-    top:0;
-    right: 0;
-    width: 10px;
-    height:100%;
-    background: rgba(255, 255, 255, 0.05);
-}
-
-
-#progressbar {
-    position: fixed;
-    top:0;
-    right: 0;
-    width: 10px;
-    height:100%;
-    background:  linear-gradient(to top, #008aff, #00ffe7);
-    animation: animate 5s linear infinite;
-
-}
 .writeText {
     padding: 400px;
     position: relative;
@@ -143,35 +94,23 @@ a:focus {
     line-height: 1em;
 }
 
-@keyframes animate {
-    0%, 100% {
-        filter: hue-rotate(0deg);
-    }
-
-    50% {
-        filter: hue-rotate(360deg);
-    }
-}
 
 header {
     width: 100%;
     background: #000033;
     text-align: center;
-    /*padding: 4em 0;*/
     padding: 6em 0;
 }
 
-.intro {
+/*.intro {
     width: 100%;
-}
+}*/
 
 .summary {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     opacity: .8;
-    /*font-size: .95rem;*/
-    /*padding: 1em 0;*/
     padding: 3em 0;
 }
 
@@ -180,35 +119,11 @@ header {
     background: #efefef;
     padding: 3em 2em;
     margin-bottom: 4em;
-
-    /*columns: 20em;*/
-}
-
-/* Style for overview */
-.overview{
-    background-color: #f1f1f1;
-    /*padding: 65px;*/
-      text-align: justify;
-   text-justify: inter-word;
-    padding: 5px;
-    height:1200px;
-    text-align: center;
-    width:100%;
-    color: black;
-}
-
-
-
-.ml9 {
-  position: relative;
-  font-weight: 200;
-  font-size: 4em;
 }
 
 .ml9 .text-wrapper {
   position: relative;
   display: inline-block;
-  /*padding-top: 0.2em;*/
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
@@ -220,52 +135,82 @@ header {
   line-height: 1em;
 }
 
-
-
-
-
 .preamble h3 {
     text-align: center;
-    /*column-span: all;*/
 }
 
 .preamble p {
     margin-top: 0;
 }
 
-.main {
+/*.main {
     padding: 2rem;
-    /*margin-top: 0px;*/
     padding-top:0rem;
-}
-
-.sidebar {
-    background: #92DFF1;
-    padding: 2em;
-}
+}*/
 
 .copyright-text {
-        text-align: center;
-        padding-top: 25px;
-        padding-bottom: 14px;
-        font-size:12px;
-        /*font: 2px 200 "Segoe UI Light", 
-        Helvetica, Arial, sans-serif;*/
-        /*font: 2px 400 "Segoe UI Light", 
-        Helvetica, Arial, sans-serif;*/
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 14px;
+    font-size:12px;
 } 
+
+
+ .main-nav li{
+      display:inline-block;
+    }
+/* .main-nav li a{
+      background-color: #f1f1f1;
+      color: black;
+      text-decoration: none;
+      padding: 5px 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+    }*/
+
+    .sidebar a:hover {
+        color: white;
+    }
+
+    .sidebar .closebtn {
+      display: none
+      /*display:contents;*/
+    /*  display: contents;*/
+      /*display: none;*/
+      /*position: center;*/
+     /* position: absolute;*/
+/*      top: 0;
+      right: 150px;
+      font-size: 36px;
+      margin-left: 50px;*/
+    }
+
+    .openbtn {
+      display: contents;
+      /*display:none;*/
+    }
+
+
+     .sidebar a {
+      /*padding-top: 20px;*/
+      /*padding-top: 100px;
+      margin-top: 1000px;*/
+      /*display: block;*/
+      /*display: table;*/
+      display:inline-block;
+      padding: 50px 8px 0px 8px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      /*display: block;*/
+    }
+
+
+
 
 
 /*Deals with desktop version styling*/
 @media (min-width: 900px) {
-
-   /* .page-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    */
-
-
 
     h1, h3, h4 h6 {
         font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
@@ -286,16 +231,11 @@ header {
         font-size: 4rem;
         text-align: left;
         margin-left:60px;
-        /*color: white;*/
-        /*margin: 0;*/
     }
 
      h2 {
-        /*font-size: 4rem;*/
         text-align: left;
         margin-left:60px;
-        /*color: white;*/
-        /*margin: 0;*/
     }
 
     h3 {
@@ -312,28 +252,10 @@ header {
         padding-bottom: 0px;
     }
 
-    /*h5 {
-        font-size: 22px;
-        text-align: center;
-        color: black;
-    }*/
-
     h5 {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-
-
-
-
-    /*h6 {*/
-        /*text-align:center;*/
-       /* margin-left:auto;
-        margin-right:auto;
-        width: 100%;*/
- /*   }*/
-
-
 
     h6 {
         font-size: 48px;
@@ -348,17 +270,13 @@ header {
     p {
     font-size: 22px;
     color: black;
-}
+    }
 
-    /*.main {
-        width: 50%;
-        margin-left: auto;
-    }*/
-    
     .sidebar {
-        width: 30%;
-        margin-right: auto;
-    /*   margin-right: 0px;*/
+      width: 30%;
+      margin-right: auto;
+      background: #92DFF1;
+      padding: 2em;
     }
 
     .copyright-text {
@@ -370,175 +288,127 @@ header {
         font: 20px 400 "Segoe UI Light", Helvetica, Arial, sans-serif;
     } 
 
-     .subtitle {
+    .subtitle {
         margin-left:30px;
         text-align:left;     
     } 
 
-  /*  .Nav {
-        margin-left: 1200px;
-        margin-top:-300px;
-    }*/
+    .Nav{
+      float: right;
+      margin-top:-200px;
+      margin-right: 30px;
+    }
 
+    .main-nav{
+      background-color: #f1f1f1;
+      float:right;
+      list-style:none;
+      margin-top: 10px;
+      margin-bottom: 2px;
+    }
 
+    /* Makes Navigation horizontally aligned */
+    .main-nav li{
+      display:inline-block;
+    }
 
+    .main-nav li a{
+      background-color: #f1f1f1;
+      color: black;
+      text-decoration: none;
+      padding: 5px 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+    }
 
+    .main-nav li.active a:hover{
+      border:1px solid black;
+    }
 
-.Nav{
-/*    background-color: #f1f1f1;*/
+    .main-nav li a:hover{
+      border: 1px solid black;
+    }
 
-    margin-left: 1200px;
-    margin-top:-200px;
-}
-.main-nav{
-    background-color: #f1f1f1;
-    float:right;
-    list-style:none;
-    margin-top: 10px;
-    margin-bottom: 2px;
-}
+    .button{
+      margin-top:36px;
+      margin-left:200px;
+    }
 
-/* Makes Navigation horizontally aligned */
-.main-nav li{
+    .btn{
+      border: 1px solid white;
+      padding:10px 30px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      margin-right: 5px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
 
-    display:inline-block;
+    .btn-one{
+      font-family:"Roboto", sans-serif;
+    }
 
-}
+    .btn-one:hover{
+      background-color: darkblue;
+      font-family:"Roboto", sans-serif;
+    }
 
-.main-nav li a{
-    background-color: #f1f1f1;
-    color: black;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-}
+    .btn-two{
+      font-family: "Roboto", sans-serif;
+    }
 
-.main-nav li.active a:hover{
+    .btn-two:hover{
+      background-color: darkblue;
+      font-family:"Roboto", sans-serif;
+    }
 
-    border:1px solid black;
-}
+    .sidebar {
+      height: 100%; 
+      width: 0; /* 0 width - delta JS */
+      position: fixed;
+      z-index: 1; 
+      top: 0;
+      right:-120px;
+      background-color: #111; 
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px;
+      transition: 0.5s; /* 0.5 second transition to slide in the sidebar */
+    }
 
-.main-nav li a:hover{
-    border: 1px solid black;
-}
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
 
+    .sidebar a:hover {
+      color: white;
+    }
 
+    .sidebar .closebtn {
+      display: contents;
+      position: absolute;
+      top: 0;
+      right: 150px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-.button{
-    margin-top:36px;
-   /* margin-left:175px;*/
-   /*margin-left:50px;*/
-   margin-left:200px;
-    /*text-align: center;*/
-}
+    .openbtn {
+      /*display:;*/
+      font-size: 35px;
+      background-color: #000033;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      margin-top:-30px;
+      margin-left: 140px;
+    }
 
-.btn{
-
-    border: 1px solid white;
-    padding:10px 30px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    margin-right: 5px;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.btn-one{
-    font-family:"Roboto", sans-serif;
-}
-
-.btn-one:hover{
-    background-color: darkblue;
-    font-family:"Roboto", sans-serif;
-}
-
-.btn-two{
-    font-family: "Roboto", sans-serif;
-}
-
-.btn-two:hover{
-    background-color: darkblue;
-    font-family:"Roboto", sans-serif;
-}
-
-
-/* The sidebar menu */
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  /*left: 0;*/
-  /*right: 0;*/
-  /*right: -25px;*/
-  /*right: -40px;*/
-  right:-120px;
-  /*right:auto;*/
- /* left:auto;*/
- /* background-color: #000033;*/
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  /*color: #000033;*/
-  display: block;
-/*  transition: 0.3s;*/
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
- /* color: #f1f1f1;*/
-  color: #000033;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  /*right: 25px;*/
-  /*right: 35px;*/
-/*  right: -60px;*/
-/*  right: 100px;*/
-/*  right: 160px;*/
-  right: 150px;
-  /*right: 10px;*/
- /* right:0px*/
-  font-size: 36px;
-  margin-left: 50px;
-  /*background-color: #000033;*/
-}
-
-/* The button used to open the sidebar */
-.openbtn {
- 
-/*  font-size: 20px;*/
-  font-size: 35px;
-  /*cursor: pointer;*/
-  background-color: #000033;
-  color: white;
-  /*padding: 10px 15px;*/
-  padding: 10px 30px;
-  border: none;
- /* margin-left: 100px;*/
- margin-top:-30px;
- margin-left: 140px;
-  /* position: fixed;*/
-}
-
-.openbtn:hover {
-  background-color: #000033;
-}
-
-
+    .openbtn:hover {
+      background-color: #000033;
+    }
 }
